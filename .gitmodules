@@ -1,0 +1,3 @@
+[submodule "lib/speed-of-sound"]
+	path = lib/speed-of-sound
+	url = git@github.com:lelandjansen/speed-of-sound
