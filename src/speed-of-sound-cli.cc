@@ -25,7 +25,7 @@ auto SetDoubleFromInput(std::istream &in, double *number) -> std::string {
   } catch (std::invalid_argument) {
     response << "Invalid value '" << value_input << '\'';
   } catch (std::out_of_range) {
-    response << "Value is too big";
+    response << "Value is outside the range of a double";
   }
   return response.str();
 }
