@@ -78,14 +78,14 @@ auto main(const int argc, const char **argv) -> int {
       if (input == "e") {
         response << EnvironmentReport(environment);
       } else if (input == "c") {
-        response << "speed of sound: " << std::setprecision(16)
+        response << "speed of sound: " << std::setprecision(30)
                  << speed_of_sound.Compute(environment)
                  << " m/s";
       } else if (input == "q") {
-        response << "speed of sound: " << std::setprecision(16)
+        response << "speed of sound: " << std::setprecision(30)
                  << speed_of_sound.QuickCompute(environment) << " m/s";
       } else if (input == "a") {
-        response << "approximate speed of sound: "<< std::setprecision(16)
+        response << "approximate speed of sound: "<< std::setprecision(30)
                  << speed_of_sound.Approximate(environment) << " m/s";
       } else if (input == "t") {
         response << SetDoubleFromInput(std::cin, &environment.temperature_);
